@@ -1,0 +1,372 @@
+@font-face {
+    font-family: f1;
+    src: url(/font/EduNSWACTFoundation-Medium.ttf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(/font/Montserrat-Medium.ttf);
+}
+
+:root{
+    --font: font1, sans-serif;
+    --primary-color: azure;
+    --secondary-color: white;
+    --active-color: azure;
+    --bg-white: white;
+}
+
+*{
+    border: 0px;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgba(36, 34, 34, 0.89);
+    background-image: url(/img/kevin-bhagat-zNRITe8NPqY-unsplash.avif);
+    background-size: 100%;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 10px;
+    font-weight: 200;
+    box-sizing: border-box;
+    background: #920f36;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.logo{
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: f1, sans-serif;
+    text-shadow: 6px -5px #920f3660;
+    color: azure;
+}
+
+.item{
+    font-size: 20px;
+    float: right;
+    list-style-type: none;
+    font-family: f2, sans-serif;
+    font-weight:700;
+}
+.item li{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 1em;
+    color: azure;
+}
+
+.item li a{
+    text-decoration: none;
+}
+
+.item li a:hover{
+    border-radius: 20px;
+    border-color: aliceblue;
+    color: azure;
+    padding: 1px 10px;
+    box-shadow: 0 0 5px 5px#920f3659;
+    background-color: #920f3649;
+    text-transform: uppercase;
+}
+
+.menu button{
+    font-family: f4, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: azure;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(240, 255, 255, 0.719);
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.menu button a{
+    text-decoration: none;
+    color: #920f36;
+}
+
+.menu button a:hover{
+    color: #eef0f0;
+}
+
+.menu button:hover{
+    color: #eef0f0;
+    background-color: #920f3644;
+}
+
+section{
+    margin-top: 110px;
+}
+
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px 200px 20px 80px;
+    color: #eef0f0;
+}
+
+.sec2, .sec2_login{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    color: #eef0f0;
+}
+
+.sec2{
+    margin: 60px 0px 20px 10px;
+}
+
+.sec2_login{
+    margin: 80px 10px 20px 10px;
+}
+
+.side1{
+    margin-top: 10px;
+    font-family: f4, sans-serif;
+    font-size: 23px;
+    width: 550px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.side1 h1{
+    font-size: 55px;
+    width: 100%;
+}
+
+.side1 button, .side1_login button{
+    font-family: f1,sans-serif;
+    padding: 5px 20px;
+    font-size: 28px;
+    background-color: #920f36;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+a{
+    color: azure;
+}
+
+.side1 button:hover, .side1_login button:hover{
+    background-color: #f0ffff5b;
+    color: #920f3691;
+}
+
+.side2, .side2_login{
+    font-family: f4, sans-serif;
+    width: 350px;
+    background-color: #920f36b0;
+    box-shadow: 0 0 5px 5px#920f3659;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: azure;
+}
+
+.side1_login{
+    font-family: f4, sans-serif;
+    font-size: 23px;
+    width: 550px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.side1_login h1{
+    text-align: left;
+    font-size: 45px;
+}
+
+.side2 h2, .side2_login h2{
+    font-size: 33px;
+    text-align: center;
+}
+
+.sign-up{
+    text-align: center;
+    font-size: 18px;
+}
+
+.sign-up a{
+    color: #920f36;
+    font-weight: 800;
+    padding: 1px 5px;
+    background-color: #ebe6e850;
+    border-radius: 7px;
+}
+
+.sign-up a:hover{
+    color: azure;
+    font-weight: 800;
+    padding: 1px 5px;
+    background-color: #920f36b0;
+    border-radius: 5px;
+}
+
+
+.side2 form label,
+.side2_login form label{
+    font-size: 17px;
+    margin: 10px 2px;
+}
+
+.side2 form input,
+.side2_login form input{
+    margin-bottom: 20px;
+    background-color: #eef0f0ea;
+    width: 99%;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+.side2 form input:focus-within{
+    outline: none;
+    background-color: #f0ffff80;
+    border-style: none;
+    border-color: aliceblue;
+}
+
+#submit{
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    margin-top: 0%;
+    padding-left: 0%;
+    margin: 0px 100px 30px;
+    color: #920f36;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+#submit:hover{
+    background-color: #f0ffff86;
+    color: #920f36;
+}
+
+.checkbtn{
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+
+.contact_logo{
+    display: none;
+}
+
+@media (max-width:830px) {
+    .checkbtn{
+        font-size: 30px;
+        line-height: 70px;
+        cursor: pointer;
+        padding-top: 25px;
+        transition: all 0.5s;
+    }
+
+    .checkbtn img{
+        width: 45px;
+        height: 45px;
+        border-radius: 25px;
+        border: 3px solid #eef0f0;
+        color:#920f36;
+    }
+
+    .checkbtn img:hover{
+        background-color: #f5f1f2;
+    }
+
+    .contact_logo{
+        display: inline;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .contact_logo img:hover{
+        background-color: #eef0f0;
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #920f36;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        font-weight: 900;
+    }
+
+    .item li{
+        display: block;
+        line-height: 80px;
+        margin: 50px 0;
+        line-height: 50px;
+        padding: 0 1em;
+    }
+
+    .items li a{
+        font-size: 25px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .sec1{
+        justify-content:center;
+        margin:10px 30px 20px 30px;
+    }
+
+    .side1{
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+
+    .side1_login h1{
+        margin-top: 50px;
+    }
+}
+
